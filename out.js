@@ -1153,7 +1153,7 @@ function onPieceMove(move) {
 
     if (!state.hasMoves) {
         if (state.check) {
-            checkmate(move.color);
+            checkmate((color + 1) % 2);
         } else {
             draw();
         }
